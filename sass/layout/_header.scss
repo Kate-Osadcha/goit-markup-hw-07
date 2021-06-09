@@ -1,0 +1,124 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.link-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-right: 94px;
+}
+
+.logo-first-part {
+  color: #2196f3;
+}
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-black-color);
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--duration) var(--timing-function);
+}
+
+.menu-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.list-contact {
+  display: flex;
+  align-items: center;
+}
+
+.list-contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contact-icon {
+  fill: var(--main-grey-color);
+  margin-right: 10px;
+  transition: fill var(--duration) var(--timing-function);
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+.smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.list-contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--main-grey-color);
+  transition: color var(--duration) var(--timing-function);
+}
+
+.list-contact-link:hover,
+.list-contact-link:focus {
+  color: var(--accent-color);
+}
+.header-contact-icon:hover,
+.header-contact-icon:focus {
+  fill: var(--accent-color);
+}
+.list-contact-link:hover .header-contact-icon,
+.list-contact-link:focus .header-contact-icon {
+  fill: var(--accent-color);
+}
