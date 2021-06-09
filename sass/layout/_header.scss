@@ -25,6 +25,7 @@
 .logo-first-part {
   color: #2196f3;
 }
+
 .menu {
   display: flex;
 }
@@ -44,9 +45,13 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--duration) var(--timing-function);
-}
+  
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+  }
 
-.menu-link.current::after {
+  &.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -56,14 +61,10 @@
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
+ }
 }
 
 .current {
-  color: var(--accent-color);
-}
-
-.menu-link:hover,
-.menu-link:focus {
   color: var(--accent-color);
 }
 
@@ -76,16 +77,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.list-contact-item:not(:last-child) {
+  
+  &:not(:last-child) {
   margin-right: 50px;
+  }
 }
 
-.header-contact-icon {
-  fill: var(--main-grey-color);
-  margin-right: 10px;
-  transition: fill var(--duration) var(--timing-function);
-}
+
 
 .envelope {
   width: 16px;
@@ -108,17 +106,25 @@
   letter-spacing: 0.02em;
   color: var(--main-grey-color);
   transition: color var(--duration) var(--timing-function);
+  
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+  }
 }
 
-.list-contact-link:hover,
-.list-contact-link:focus {
-  color: var(--accent-color);
-}
-.header-contact-icon:hover,
-.header-contact-icon:focus {
+.header-contact-icon {
+  fill: var(--main-grey-color);
+  margin-right: 10px;
+  transition: fill var(--duration) var(--timing-function);
+  
+  &:hover,
+  &:focus {
   fill: var(--accent-color);
-}
-.list-contact-link:hover .header-contact-icon,
-.list-contact-link:focus .header-contact-icon {
+  }
+
+  .list-contact-link:hover &,
+  .list-contact-link:focus & {
   fill: var(--accent-color);
+  }
 }

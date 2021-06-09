@@ -20,10 +20,10 @@
 
 .advantage-list-item {
   width: 270px;
-  /*height: 101px;*/
-}
-.advantage-list-item:not(:last-child) {
+  
+  &:not(:last-child) {
   margin-right: 30px;
+  }
 }
 
 .advantage-icon-border {

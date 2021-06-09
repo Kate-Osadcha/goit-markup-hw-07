@@ -43,9 +43,9 @@
   border: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--duration) var(--timing-function);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
+  
+  &:hover,
+  &:focus {
   background-color: #188ce8;
+  }
 }

@@ -30,8 +30,9 @@
   height: 18px;
   padding: 0;
   cursor: pointer;
+  
+  &:hover {
+  fill: var(--accent-color);
+  }
 }
 
-.close-btn-icon:hover {
-  fill: var(--accent-color);
-}

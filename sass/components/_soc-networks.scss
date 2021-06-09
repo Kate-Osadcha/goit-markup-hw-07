@@ -15,21 +15,22 @@
   background-color: var(--main-white-color);
   border-radius: 50%;
   transition: background-color var(--duration) var(--timing-function);
+  
+  &:hover,
+  &:focus {
+  background-color: var(--accent-color);
+  }
 }
 
-.soc-networks-link:hover,
-.soc-networks-link:focus {
-  background-color: var(--accent-color);
-}
 
 .soc-networks-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
   transition: fill var(--duration) var(--timing-function);
-}
-
-.soc-networks-link:hover .soc-networks-icon,
-.soc-networks-link:focus .soc-networks-icon {
+  
+  .soc-networks-link:hover &,
+  .soc-networks-link:focus & {
   fill: var(--main-white-color);
+  }
 }
