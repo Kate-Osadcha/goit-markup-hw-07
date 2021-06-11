@@ -1,4 +1,4 @@
-.soc-networks-list {
+.soc-networks {
   display: flex;
   justify-content: space-between;
   width: 206px;
@@ -6,7 +6,7 @@
   margin: auto;
 }
 
-.soc-networks-link {
+.soc-networks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,15 +22,14 @@
   }
 }
 
-
-.soc-networks-icon {
+.soc-networks__icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
   transition: fill var(--duration) var(--timing-function);
   
-  .soc-networks-link:hover &,
-  .soc-networks-link:focus & {
+  .soc-networks__link:hover &,
+  .soc-networks__link:focus & {
   fill: var(--main-white-color);
   }
 }

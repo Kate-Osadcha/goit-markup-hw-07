@@ -1,13 +1,13 @@
-.section-team {
+.team {
   background: #f5f4fa;
 }
 
-.team-list {
+.team__list {
   display: flex;
   margin-right: calc(- 1 * var(--gap-card-set));
 }
 
-.team-list-item {
+.team__item {
   width: 270px;
   height: 428px;
   flex-basis: calc(100% / 4 - var(--gap-card-set));
@@ -18,12 +18,12 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-content {
+.team__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-title {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.position {
+.team__position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;

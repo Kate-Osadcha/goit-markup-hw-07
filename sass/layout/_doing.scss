@@ -1,18 +1,18 @@
-.doing-list {
+.doing__list {
   display: flex;
   justify-content: center;
   margin-right: calc(- 1 * var(--gap-card-set));
 }
 
-.doing-list-item {
+.doing__item {
   margin-right: var(--gap-card-set);
 }
 
-.doing-list-image-wrapper {
+.doing__image-wrapper {
   position: relative;
 }
 
-.overlay-wrapper {
+.doing__overlay-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -21,7 +21,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.overlay-doing {
+.doing__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
